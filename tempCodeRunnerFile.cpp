@@ -2,14 +2,14 @@
 using namespace std;
 
 //Write the definition of myString() here
-void myString(char *&p,int N){
-	p=new char;
+char myString(char *p,int N){
+	char *a=new char;
 	
 	for(int i=0;i<N;i++){
-		p[i] ='A' + i;
-		
+		a[i] ='A' + i;
+		cout<< a[i];
 	}
-	p[N] = '\0';
+	a[N] = '\0';
 }	 	
 
 int main(){
